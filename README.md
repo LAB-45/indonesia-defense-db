@@ -10,7 +10,7 @@ Maintained by **[LAB45 — Laboratorium Indonesia 2045](https://www.lab45.id)**.
 
 ## What it tracks
 
-- **131 weapon systems** across TNI AU, TNI AD, TNI AL, and Korps Marinir
+- **130 weapon systems** across TNI AU, TNI AD, TNI AL, Mabes TNI, and Kemhan
 - Procurement status, contract values, delivery timelines, and supplier nations
 - Progress against the Perisai Trisula Nusantara (PTN) modernization program and Minimum Essential Force (MEF) baselines
 - Component-level supply chain analysis and dependency risk ratings for 14 major incoming platforms
@@ -43,6 +43,19 @@ Primary sources:
 Single-file React application (`index.html`) — compiled JS with D3 v7, deployed via GitHub Pages. No build step, no backend, no dependencies to install.
 
 To run locally: download `index.html` and open it in any modern browser.
+
+## Changelog
+
+### v0.6.3 — May 2026
+**Data quality audit and bilingual About Tab**
+
+- Quantity methodology baseline: `quantity` = actual inventory, not contract total (22 systems corrected)
+- Evidentiary tier framework added: Confirmed / Supplier-confirmed ⚠ / Thin ⚠
+- HISARO: qty held as TBD; note expanded with explicit SIPRI NULL quantity caveat and IISS 2025/2026 non-listing
+- ATMACA: standalone entry retained; qty detail updated (45 rounds batch 1, SIPRI 2023; batch 2 quantity unpublished)
+- YAKHONT: quantity corrected to 10 missiles (round count methodology); order year corrected 2007→2009 per SIPRI authoritative dating
+- KHAN PTN tracker: ptnQty=8 preserved per blueprint; note expanded with explicit 50% under-blueprint framing at launcher level
+- About Tab: bilingual EN/ID toggle added (default English, localStorage-persisted); coverage 76 t() invocations
 
 ## Citation
 
